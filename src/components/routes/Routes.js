@@ -6,7 +6,7 @@ export default function MyRoutes() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/details" element={<DetailsScreen />} />
+      <Route path="touch-coin/details/:id" element={<DetailsScreen />} />
     </Routes>
   );
 }
