@@ -49,7 +49,7 @@ export default function DetailsScreen() {
             {cryptoCoin.totalSupply}
           </p>
           <p>
-            Availble Supply:
+            Available Supply:
             {' '}
             {cryptoCoin.availableSupply}
           </p>
