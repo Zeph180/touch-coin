@@ -8,7 +8,6 @@ export const getCryptoCoinsAsync = createAsyncThunk(
   'cryptoCoins/getCryptoCoins',
   async () => {
     const resp = await axios.get(coinsUrl);
-    console.log(resp.data.coins);
     return resp.data.coins;
   },
 );

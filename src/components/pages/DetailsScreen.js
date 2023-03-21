@@ -1,67 +1,66 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import { useSelector } from 'react-redux';
+import { Icon } from '@iconify/react';
 import { Link, useParams } from 'react-router-dom';
+import '../styles/Details.css';
 
 export default function DetailsScreen() {
   const { cryptoCoins } = useSelector((state) => state.cryptoCoins);
   const { id } = useParams();
   const cryptoCoin = cryptoCoins.find((item) => item.id === id);
+  if (!cryptoCoin) {
+    return <p>Please go back to the home page and choose coin</p>;
+  }
   return (
     <section>
-      <Link to="/">To home</Link>
-      <article>
-        <img
-          src={cryptoCoin.icon}
-          alt={`${cryptoCoin.name}logo`}
-        />
-        <p>
-          Name:
-          {' '}
-          {cryptoCoin.name}
-        </p>
-        <p>
-          Price:
-          {' '}
-          {cryptoCoin.price}
-        </p>
-        <article>
-          <h4>Price Changes</h4>
-          <p>
-            High:
-            {' '}
-            {cryptoCoin.priceChange1h}
-          </p>
-          <p>
-            Diff:
-            {' '}
-            {cryptoCoin.priceChange1h}
-          </p>
-          <p>
-            Low:
-            {' '}
-            {cryptoCoin.priceChange1h}
-          </p>
+      <Link to="/">
+        <Icon className="dt-link" icon="mdi:arrow-left-thin-circle-outline" />
+      </Link>
+      <article className="details-cont">
+        <article className="dt-logo-cont">
+          <div className="dt-logo">
+            <img
+              src={cryptoCoin.icon}
+              alt={`${cryptoCoin.name}logo`}
+              className="dt-icon"
+            />
+          </div>
         </article>
-        <article>
-          <h4>Market Info</h4>
-          <p>
+        <h2 className="dt-name">{cryptoCoin.name}</h2>
+        <article className="desc">
+          <h3 className="dt-name">Price Changes</h3>
+          <p className="items">
+            Price:
+            <span className="item-dt">{cryptoCoin.price}</span>
+          </p>
+          <p className="items">
+            High:
+            <span className="item-dt">{cryptoCoin.priceChange1h}</span>
+          </p>
+          <p className="items">
+            Diff:
+            <span className="item-dt">{cryptoCoin.priceChange1d}</span>
+          </p>
+          <p className="items">
+            Low:
+            <span className="item-dt">{cryptoCoin.priceChange1d}</span>
+          </p>
+          <h3 className="dt-name">Market Info</h3>
+          <p className="items">
             Total Supply:
-            {' '}
-            {cryptoCoin.totalSupply}
+            <span className="item-dt">{cryptoCoin.totalSupply}</span>
           </p>
-          <p>
+          <p className="items">
             Available Supply:
-            {' '}
-            {cryptoCoin.availableSupply}
+            <span className="item-dt">{cryptoCoin.availableSupply}</span>
           </p>
-          <p>
+          <p className="items">
             Market Cap:
-            {' '}
-            {cryptoCoin.marketCap}
+            <span className="item-dt">{cryptoCoin.marketCap}</span>
           </p>
-          <p>
+          <p className="items">
             Volume:
-            {' '}
-            {cryptoCoin.volume}
+            <span className="item-dt">{cryptoCoin.volume}</span>
           </p>
         </article>
       </article>
