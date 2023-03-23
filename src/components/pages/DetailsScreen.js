@@ -1,4 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import { useSelector } from 'react-redux';
 import { Icon } from '@iconify/react';
 import { Link, useParams } from 'react-router-dom';

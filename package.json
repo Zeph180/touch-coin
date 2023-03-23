@@ -39,6 +39,10 @@
       "last 1 safari version"
     ]
   },
+  "peerDependencies": {
+    "react": "^16.0.0",
+    "@iconify/react": "^4.1.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.21.3",
     "@babel/eslint-parser": "^7.21.3",
