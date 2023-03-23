@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home component should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="nav"
+  >
+    <h1>
+      Touch coin
+    </h1>
+    <div
+      class="icons-cont"
+    >
+      <span />
+      <span />
+    </div>
+  </div>
+  <section
+    class="home-cont"
+  />
+</DocumentFragment>
+`;

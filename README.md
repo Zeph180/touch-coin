@@ -30,7 +30,7 @@ After you're finished please remove all the comments and instructions!
   <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>Microverse README Template</b></h3>
+  <h3><b>Touch Coin</b></h3>
 
 </div>
 
@@ -62,7 +62,7 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 [Uganda Music Association Website] <a name="about-project"></a>
 
-**Music Association of Uganda UMA** is a website built to for the Music association of Uganda to showcase upcoming events in the association. The current on going event is the UMA day.
+**Touch Coin** is a mobile web application built to provide numerical facts  about crypto currencies.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -71,9 +71,9 @@ After you're finished please remove all the comments and instructions!
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="">HTML</a></li>
+    <li><a href="">React.js</a></li>
     <li><a>CSS</a></li>
-    <li><a>Javascript</a></li>
+    <li><a>Redux</a></li>
   </ul>
 </details>
 
@@ -82,17 +82,15 @@ After you're finished please remove all the comments and instructions!
 ### Key Features <a name="key-features"></a>
 
 - **Home page**
-- **About Page**
-- **Mobile Menu**
-- **Speakers section**
+- **Details Page**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
-
+-[Video presentation](https://drive.google.com/file/d/1cbCBfcNRXu_vcnE9p9hM5Sr9FaK3wEHa/view?usp=sharing)
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://uganda-music-association.netlify.app/)
+- [Touch coin Live demo](https://touch-coin-zeph.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -119,7 +117,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone https://github.com/Zeph180/UmaDay22.git
+  git clone https://github.com/Zeph180/touch-coin.git
 ```
 
 ### Usage
@@ -127,7 +125,6 @@ Clone this repository to your desired folder:
 
 ### Deployment
 -Netlify
-Github pages
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -135,13 +132,11 @@ Github pages
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
-
 👤 **Kigozi Joseph**
 
-- GitHub: [@githubhandle](https://github.com/zeph180)
-- Twitter: [@twitterhandle](https://twitter.com/richardszeph)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/kigozijosephsuubi)
+- GitHub: [Zeph180](https://github.com/zeph180)
+- Twitter: [Richard_zeph](https://twitter.com/richardszeph)
+- LinkedIn: [kigozi Joseph Suubi](https://linkedin.com/in/kigozijosephsuubi)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -149,10 +144,7 @@ Github pages
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
 - **Login**
-- **Tickets**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -180,7 +172,7 @@ If you like this project dont hesitate to buy buy a cup of coffee
 
 > Give credit to everyone who inspired your codebase.
 
-I would like to thank Cindy Shin on Behance
+I would like to thank Nelson Sakwa on Behance(https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs))
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
