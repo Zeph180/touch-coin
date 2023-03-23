@@ -1,5 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { Icon } from '@iconify/react';
@@ -8,6 +8,8 @@ import '../styles/Home.css';
 
 export default function Home() {
   const dispatch = useDispatch();
+  const [searchQuery, setSearchQuery] = useState('');
+
   useEffect(() => {
     dispatch(getCryptoCoinsAsync());
   }, [dispatch]);
@@ -15,8 +17,12 @@ export default function Home() {
   const { cryptoCoins } = useSelector((state) => state.cryptoCoins);
 
   if (!cryptoCoins) {
-    return <p>Noo coins loaded</p>;
+    return <p>No coins loaded</p>;
   }
+
+  const filteredCoins = cryptoCoins
+    .filter((coin) => coin.name.toLowerCase()
+      .includes(searchQuery.toLowerCase()));
 
   return (
     <>
@@ -27,8 +33,16 @@ export default function Home() {
           <Icon icon="material-symbols:settings" />
         </div>
       </div>
+      <div className="search-bar">
+        <input
+          type="text"
+          placeholder="Search coins"
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+        />
+      </div>
       <section className="home-cont">
-        {cryptoCoins.map((cryptoCoin) => (
+        {filteredCoins.map((cryptoCoin) => (
           <article className="coin" key={cryptoCoin.id}>
             <Link to={`touch-coin/details/${cryptoCoin.id}`}>
               <Icon className="link" icon="mdi:arrow-right-thin-circle-outline" />

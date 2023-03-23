@@ -15,6 +15,15 @@ exports[`Home component should match snapshot 1`] = `
       <span />
     </div>
   </div>
+  <div
+    class="search-bar"
+  >
+    <input
+      placeholder="Search coins"
+      type="text"
+      value=""
+    />
+  </div>
   <section
     class="home-cont"
   />
